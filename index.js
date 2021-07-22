@@ -64,6 +64,9 @@ const paths = param.filter((p, i) => i % 2 === 0);
 const isRecursions = param.filter((p, i) => i % 2 === 1);
 
 for (let i = 0; i < paths.length; i++) {
-    const goInside = isRecursions[i] === "true" || true;
+    let goInside = true;
+    if (!!isRecursions[i]) {
+        goInside = isRecursions[i] === "true";
+    }
     removeComments(paths[i] + "/", goInside);
 }
