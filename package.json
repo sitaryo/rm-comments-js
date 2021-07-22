@@ -1,0 +1,11 @@
+{
+  "name": "rm-comments-js",
+  "version": "1.0.0",
+  "description": "remove comments of js project use babel (js/jsx/ts/tsx)",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/generator": "^7.14.8",
+    "@babel/parser": "^7.14.8"
+  }
+}
